@@ -2821,7 +2821,7 @@ mDNSlocal mStatus handle_regservice_request(request_state *const request)
 
     if (!ConstructServiceName(&srv, &servicereg->name, &servicereg->type, &d))
     {
-        LogMsg("ERROR: handle_regservice_request - Couldn't ConstructServiceName from, “%#s” “%##s” “%##s”",
+        LogMsg("ERROR: handle_regservice_request - Couldn't ConstructServiceName from, `%#s` `%##s` `%##s`",
                servicereg->name.c, servicereg->type.c, d.c); goto bad_param;
     }
 
@@ -4202,7 +4202,7 @@ mDNSlocal mStatus handle_resolve_request(request_state *request)
 #endif
 
     if (build_domainname_from_strings(&params.fqdn, name, params.regtype, domain) < 0)
-    { LogMsg("ERROR: handle_resolve_request bad “%s” “%s” “%s”", name, params.regtype, domain); return(mStatus_BadParamErr); }
+    { LogMsg("ERROR: handle_resolve_request bad `%s` `%s` `%s`", name, params.regtype, domain); return(mStatus_BadParamErr); }
 
     request->flags = flags;
     request->interfaceIndex = interfaceIndex;

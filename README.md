@@ -1,3 +1,8 @@
+https://github.com/wixtoolset/VisualStudioExtension
+https://blog.walterlv.com/post/add-vs2019-extension-support-to-vs2022.html
+
+若缺少afx header说明缺mfc\aft依赖没装
+
 # Apple’s Open Source DNS Service Discovery Collection
 This is Apple’s Open Source DNS Service Discovery Collection. The collection consists of a set of daemons, tools and libraries which can be used either together or separately when deploying and using DNS Service Discovery.  The collection consists of the following subsystems:
 - Daemons
